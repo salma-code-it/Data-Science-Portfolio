@@ -164,11 +164,16 @@ import matplotlib.pyplot as plt
 
 x = [1,2,3,4,5]
 y = [2,4,6,8,10]
-
-plt.plot(x, y)
+plt.figure(figsize=(5,5))
+plt.title("Simple Line",color='red')
+plt.xlabel("X axis")
+plt.ylabel("y axis")
+plt.plot(x, y,color='black')
 
 plt.show()
 ```
+Results:
+<img width="454" height="470" alt="image" src="https://github.com/user-attachments/assets/490c27ea-f79b-43c9-9b85-9a26537d30c9" />
 
 This creates a simple line chart.
 
