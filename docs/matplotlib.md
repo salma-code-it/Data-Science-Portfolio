@@ -217,6 +217,7 @@ plt.scatter(height, weight)
 
 plt.show()
 ```
+<img width="543" height="413" alt="image" src="https://github.com/user-attachments/assets/d5c879cc-a012-4913-b4fe-00fb07de63cd" />
 
 Common applications:
 
@@ -243,6 +244,7 @@ plt.bar(products, sales)
 
 plt.show()
 ```
+<img width="552" height="413" alt="image" src="https://github.com/user-attachments/assets/4ba726f8-5e70-4910-a70c-6e5917f7de21" />
 
 Common applications:
 
@@ -259,6 +261,7 @@ plt.barh(products, sales)
 
 plt.show()
 ```
+<img width="573" height="413" alt="image" src="https://github.com/user-attachments/assets/d57e0b28-c3eb-484b-8ef6-1c97ea848a34" />
 
 Useful when category names are long.
 
@@ -279,6 +282,7 @@ plt.hist(ages)
 
 plt.show()
 ```
+<img width="543" height="413" alt="image" src="https://github.com/user-attachments/assets/3fc51db2-c216-4695-817e-2cc6c464dc8a" />
 
 Histograms help answer questions like:
 
@@ -307,6 +311,7 @@ plt.pie(
 
 plt.show()
 ```
+<img width="389" height="389" alt="image" src="https://github.com/user-attachments/assets/8e0e8eea-4987-4c16-8549-1ec105c0718f" />
 
 Pie charts should only be used for a small number of categories.
 
@@ -325,6 +330,7 @@ plt.boxplot(salary)
 
 plt.show()
 ```
+
 
 A box plot displays:
 
@@ -357,6 +363,7 @@ ax[1].bar(
 
 plt.show()
 ```
+<img width="543" height="413" alt="image" src="https://github.com/user-attachments/assets/c5793185-8a7b-463d-b23e-d356cf83f245" />
 
 Useful when comparing multiple visualizations.
 
@@ -403,6 +410,7 @@ plt.plot(x,y,label="Sales")
 
 plt.legend()
 ```
+<img width="543" height="413" alt="image" src="https://github.com/user-attachments/assets/3e2d23aa-8925-4c20-8da7-894795b4288b" />
 
 ---
 
@@ -435,6 +443,7 @@ plt.plot(
     marker="o"
 )
 ```
+![Uploading image.png…]()
 
 ---
 
