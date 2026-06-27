@@ -168,36 +168,14 @@ Default theme:
 sns.set_theme()
 ```
 
-White background
+background style
 
 ```python
 sns.set_style("white")
-```
-
-Dark grid
-
-```python
 sns.set_style("darkgrid")
-```
-
-White grid
-
-```python
 sns.set_style("whitegrid")
-```
-
-Dark
-
-```python
-sns.set_style("dark")
-```
-
-Ticks
-
-```python
 sns.set_style("ticks")
 ```
-
 Themes improve the appearance of visualizations without requiring manual customization.
 
 ---
@@ -207,18 +185,12 @@ Themes improve the appearance of visualizations without requiring manual customi
 Since Seaborn uses Matplotlib, figure size is adjusted with Matplotlib.
 
 ```python
+iris = sns.load_dataset("iris")
 plt.figure(figsize=(8,5))
-```
-
-Example
-
-```python
-plt.figure(figsize=(10,6))
-
-sns.scatterplot(data=df, x="Age", y="Salary")
-
+sns.scatterplot(data=iris, x="sepal_width", y="sepal_length")
 plt.show()
 ```
+<img width="697" height="448" alt="image" src="https://github.com/user-attachments/assets/92ac545e-c166-459d-9b87-5b0a77725cbf" />
 
 ---
 
@@ -290,13 +262,13 @@ Example
 
 ```python
 sns.barplot(
-    data=df,
-    x="Department",
-    y="Salary"
+    data=iris,
+   x="sepal_width", y="sepal_length"
 )
 
 plt.show()
 ```
+<img width="678" height="448" alt="image" src="https://github.com/user-attachments/assets/e43c1f30-7e1a-40ee-94b6-af2c55c3e1e2" />
 
 Applications
 
