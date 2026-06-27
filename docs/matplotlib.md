@@ -172,7 +172,7 @@ plt.plot(x, y,color='black')
 
 plt.show()
 ```
-Results:
+<p>Result</p>
 <img width="454" height="470" alt="image" src="https://github.com/user-attachments/assets/490c27ea-f79b-43c9-9b85-9a26537d30c9" />
 
 This creates a simple line chart.
