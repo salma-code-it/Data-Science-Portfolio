@@ -1,5 +1,3 @@
----
-
 # 18. Box Plot
 
 A Box Plot summarizes the distribution of numerical data and helps detect outliers.
