@@ -45,14 +45,21 @@ It shows:
 Example
 
 ```python
-sns.violinplot(
-    data=df,
-    x="Gender",
-    y="Salary"
-)
+# Violinplot
+plt.figure(figsize=(12,5))
+plt.subplot(1,2,1)
+sns.violinplot(data=iris, x="species", y="sepal_length")
+plt.title("Violin Plot")
+
+# Boxplot
+plt.subplot(1,2,2)
+sns.boxplot(data=iris, x="species", y="sepal_length")
+plt.title("Box Plot")
 
 plt.show()
 ```
+<img width="988" height="470" alt="image" src="https://github.com/user-attachments/assets/66acb329-a1bb-4794-9f88-82c72987b3d6" />
+
 
 Use a Violin Plot when you want to understand the shape of the data distribution, not just summary statistics.
 
@@ -65,10 +72,22 @@ A Pair Plot automatically creates scatter plots between numerical variables.
 Example
 
 ```python
-sns.pairplot(df)
+sns.pairplot(iris)
 
 plt.show()
 ```
+<img width="986" height="986" alt="image" src="https://github.com/user-attachments/assets/e2dbbbf6-6e0c-40e1-92b6-663791ee5c81" />
+What each plot shows
+Diagonal plots → histograms of a single variable (sepal_length, sepal_width, petal_length, petal_width). They show the distribution of values for that feature.
+
+Off-diagonal plots → scatterplots comparing two variables. For example:
+
+sepal_length vs sepal_width → shows how sepal length relates to sepal width.
+
+sepal_length vs petal_length → shows correlation between sepal length and petal length.
+
+petal_length vs petal_width → shows a strong positive correlation (points form a diagonal line).
+
 
 Color by category:
 
@@ -99,12 +118,13 @@ One of its most common uses is displaying a correlation matrix.
 Example
 
 ```python
-correlation = df.corr(numeric_only=True)
+correlation = iris.corr(numeric_only=True)
 
 sns.heatmap(correlation)
 
 plt.show()
 ```
+<img width="527" height="418" alt="image" src="https://github.com/user-attachments/assets/60ebdbb3-248c-4a07-8c38-485e445d9444" />
 
 With annotations
 
@@ -117,6 +137,7 @@ sns.heatmap(
 
 plt.show()
 ```
+<img width="527" height="418" alt="image" src="https://github.com/user-attachments/assets/91c8aad3-633d-48f1-a4f1-046730017277" />
 
 Applications:
 
