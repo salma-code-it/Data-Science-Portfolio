@@ -6,17 +6,15 @@
 2. Complete Machine Learning Workflow
 3. Building a Machine Learning Pipeline
 4. Feature Selection
-5. Saving and Loading Models
-6. Data Leakage
-7. Reproducibility
-8. Best Practices
-9. Common Beginner Mistakes
-10. Frequently Used Scikit-Learn Modules
-11. Choosing the Right Algorithm
-12. Real-World Project Structure
-13. Interview Questions
-14. Practice Exercises
-15. Summary
+5. Data Leakage
+6. Reproducibility
+7. Best Practices
+8. Common Beginner Mistakes
+9. Frequently Used Scikit-Learn Modules
+10. Choosing the Right Algorithm
+11. Interview Questions
+12. Practice Exercises
+13. Summary
 
 ---
 
@@ -126,63 +124,7 @@ Feature selection should be performed after cleaning the data and before trainin
 
 ---
 
-# 5. Saving and Loading Models
-
-After training a model, it is common to save it for future use.
-
-## Using Joblib
-
-Save a model:
-
-```python
-import joblib
-
-joblib.dump(model, "model.pkl")
-```
-
-Load a model:
-
-```python
-model = joblib.load("model.pkl")
-```
-
-### Why Joblib?
-
-- Efficient for NumPy arrays
-- Faster than Pickle for large models
-- Recommended for Scikit-Learn models
-
----
-
-## Using Pickle
-
-Save a model:
-
-```python
-import pickle
-
-with open("model.pkl", "wb") as file:
-    pickle.dump(model, file)
-```
-
-Load a model:
-
-```python
-with open("model.pkl", "rb") as file:
-    model = pickle.load(file)
-```
-
-### Joblib vs Pickle
-
-| Joblib | Pickle |
-|---------|---------|
-| Optimized for large NumPy arrays | General Python serialization |
-| Faster for ML models | Slightly slower for large models |
-| Recommended for Scikit-Learn | Good for general objects |
-
----
-
-# 6. Data Leakage
+# 5. Data Leakage
 
 Data Leakage occurs when information from the test set influences the training process.
 
@@ -210,7 +152,7 @@ Data leakage leads to overly optimistic evaluation results and poor real-world p
 
 ---
 
-# 7. Reproducibility
+# 6. Reproducibility
 
 Machine Learning experiments should produce consistent results.
 
@@ -237,7 +179,7 @@ Using a fixed random state allows others to reproduce your experiments.
 
 ---
 
-# 8. Best Practices
+# 7. Best Practices
 
 - Understand the business problem before modeling.
 - Explore and clean the data thoroughly.
@@ -254,7 +196,7 @@ Using a fixed random state allows others to reproduce your experiments.
 
 ---
 
-# 9. Common Beginner Mistakes
+# 8. Common Beginner Mistakes
 
 - Training and testing on the same data.
 - Ignoring missing values.
@@ -269,7 +211,7 @@ Using a fixed random state allows others to reproduce your experiments.
 
 ---
 
-# 10. Frequently Used Scikit-Learn Modules
+# 9. Frequently Used Scikit-Learn Modules
 
 | Module | Purpose |
 |---------|---------|
@@ -308,42 +250,7 @@ Remember that no single algorithm is best for every problem. Experimentation and
 
 ---
 
-# 12. Real-World Project Structure
-
-A well-organized Machine Learning project might look like this:
-
-```
-Machine-Learning-Project/
-
-│
-├── data/
-│   ├── raw/
-│   ├── processed/
-│
-├── notebooks/
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── train.py
-│   ├── evaluate.py
-│
-├── models/
-│   └── model.pkl
-│
-├── docs/
-│
-├── requirements.txt
-│
-├── README.md
-│
-└── .gitignore
-```
-
-Keeping files organized makes projects easier to understand, maintain, and collaborate on.
-
----
-
-# 13. Interview Questions
+# 12. Interview Questions
 
 1. What is the difference between supervised and unsupervised learning?
 
@@ -367,7 +274,7 @@ Keeping files organized makes projects easier to understand, maintain, and colla
 
 ---
 
-# 14. Practice Exercises
+# 13. Practice Exercises
 
 ## Exercise 1
 
@@ -415,7 +322,7 @@ Then load the model and make predictions on new data.
 
 ---
 
-# 15. Summary
+# 14. Summary
 
 Scikit-Learn provides a complete ecosystem for building traditional Machine Learning applications.
 
