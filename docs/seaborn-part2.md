@@ -77,7 +77,8 @@ sns.pairplot(iris)
 plt.show()
 ```
 <img width="986" height="986" alt="image" src="https://github.com/user-attachments/assets/e2dbbbf6-6e0c-40e1-92b6-663791ee5c81" />
-# What each plot shows
+
+###  What each plot shows
 Diagonal plots → histograms of a single variable (sepal_length, sepal_width, petal_length, petal_width). They show the distribution of values for that feature.
 
 Off-diagonal plots → scatterplots comparing two variables. For example:
