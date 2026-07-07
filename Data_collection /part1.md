@@ -31,4 +31,8 @@ Part 4: 📚 Python Libraries with Built-in Datasets
 Part 5: 🏷️ Data Annotation Tools
 Part 6: 🧹 Data Cleaning & Preprocessing
 Part 7: 🔄 Data Augmentation
-Part 8: 🤖 Synthetic Data Generation
+📊 Exploratory Data Analysis (EDA) ⭐
+⚙️ Feature Engineering
+⚖️ Handling Imbalanced Data
+🤖 Synthetic Data Generation
+🧠 Model Training
