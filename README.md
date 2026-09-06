@@ -44,27 +44,12 @@ The purpose of this repository is to:
 # 📂 Repository Structure
 
 ```text
-Data-Science-Portfolio
-│
-├── README.md
-├── requirements.txt
+obesity problem
 │
 ├── ipynbfile/
-│     ├── Obesity_Prediction.ipynb
-│     ├── predict_obesity.ipynb
-│
-│
 ├── raw_csv/
-│
 ├── clean_csv/
-│
-├──models/
-│
-└── Projects/
-      ├── Obesity-Prediction
-      ├── Laptop-Price-Prediction
-      ├── Calories-Burned-Prediction
-      └── ...
+├── models/
 ```
 
 ---
